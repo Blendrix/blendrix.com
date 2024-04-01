@@ -43,13 +43,15 @@ expstickybar.prototype = {
 		var thisbar = this, $ = jQuery
 		var finalpx = (keyword == "show") ? 0 : -(this.height - this.setting.peekamount)
 		var positioncss = (this.setting.position == "bottom") ? { bottom: finalpx } : { top: finalpx }
-		this.$stickybar.stop().animate(positioncss, (anim) ? this.setting.speed : 0, function () {
-			thisbar.$indicators.each(function () {
-				var $indicator = $(this)
-				$indicator.attr('src', (thisbar.currentstate == "show") ? $indicator.attr('data-closeimage') : $indicator.attr('data-openimage'))
+		setTimeout(function () {
+			thisbar.$stickybar.stop().animate(positioncss, (anim) ? thisbar.setting.speed : 0, function () {
+				thisbar.$indicators.each(function () {
+					var $indicator = $(this)
+					$indicator.attr('src', (thisbar.currentstate == "show") ? $indicator.attr('data-closeimage') : $indicator.attr('data-openimage'))
+				})
 			})
-		})
-		thisbar.currentstate = keyword
+			thisbar.currentstate = keyword
+		}, this.setting.delay);
 	},
 
 	toggle: function () {
@@ -90,5 +92,6 @@ var mystickybar = new expstickybar({
 	revealtype: 'mouseover', //'mouseover' or 'manual'
 	peekamount: 150, //number of pixels to reveal when sticky bar is closed
 	externalcontent: "", //path to sticky bar content file on your server, or "" if content is defined inline on the page
-	speed: 200 //duration of animation (in millisecs)
+	speed: 500, //duration of animation (in millisecs)
+	delay: 650 //delay of animation (in millisecs)
 })
