@@ -21,11 +21,20 @@
 title: Blendrix.com
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the official website for Blendrix, an electronic music producer and DJ from the United States.
+  This is the official website for Blendrix, an electronic music producer and DJ from the United States. Blendrix's tracks are unique hybrids - fusing the multi-layered, hyped-up percussion and "feel-it-in-your-chest" bass of modern EDM with the intricate textures and spacious soundscapes that characterized the psychedelic rock & funk of the '60s & '70s. By blurring the line between past and present, Blendrix gives his listeners a glimpse into the future.
+
 baseurl: "/blendrix.com" # the subpath of your site, e.g. /blog
 url: "https://blendrix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: blendrix
+
+social:
+  - title: "SoundCloud"
+    url: "https://soundcloud.com/blendrix"
+  - title: "YouTube"
+    url: "https://www.youtube.com/user/blendrix"
+  - title: "HearThis.at"
+    url: "https://hearthis.at/blendrix"
 
 # Build settings
 theme: minima
