@@ -22,8 +22,8 @@ title: Blendrix.com
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   This is the official website for Blendrix, an electronic music producer and DJ from the United States.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blendrix.github.io/blendrix.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blendrix.com" # the subpath of your site, e.g. /blog
+url: "https://blendrix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  blendrix
 
