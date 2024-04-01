@@ -21,7 +21,7 @@ jobs:
 
       # Use GitHub Deploy Action to build and deploy to Github
       # For latest version: `jeffreytse/jekyll-deploy-action@master`
-      - uses: Blendrix/jekyll-deploy-action@v0.5.1
+      - uses: Blendrix/jekyll-deploy-action@v0.5.1b
         with:
           provider: 'github'         # Default is github
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
